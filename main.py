@@ -29,12 +29,12 @@ User = Client(
 async def start_handler(_, event: Message):
     await event.reply_text(
         "Hi, I am Messages Search Bot!\n\n"
-        "**Developer:** @AbirHasan2005\n"
-        "**Demo Bot:** @AHListBot",
+        "**Developer:** @infotechIT\n"
+        "**Demo Bot:** @axtoolsbot",
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-             InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-            [InlineKeyboardButton("Developer - @AbirHasan2005")],
+            [InlineKeyboardButton("Support Group", url="https://t.me/It_Bot_supporters"),
+             InlineKeyboardButton("Bots Channel", url="https://t.me/infotechbots")],
+            [InlineKeyboardButton("Developer - @infotechIT")],
             [InlineKeyboardButton("Search Inline", switch_inline_query_current_chat=""), InlineKeyboardButton("Go Inline", switch_inline_query="")]
         ])
     )
@@ -56,9 +56,9 @@ async def inline_handlers(_, event: InlineQuery):
                 ),
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton("Search Here", switch_inline_query_current_chat="")],
-                    [InlineKeyboardButton("Support Group", url="https://t.me/DevsZone"),
-                     InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                    [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")]
+                    [InlineKeyboardButton("Support Group", url="https://t.me/.It_Bot_supporters"),
+                     InlineKeyboardButton("Bots Channel", url="https://t.me/infotechbots")],
+                    [InlineKeyboardButton("Developer - @infotechIT", url="https://t.me/infotechIT")]
                 ])
             )
         )
